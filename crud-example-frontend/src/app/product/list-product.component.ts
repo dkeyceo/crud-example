@@ -35,7 +35,7 @@ export class ListProductComponent implements OnInit {
       });
       this.getProducts();
     }, err => {
-      this.toastr.error(err.message, 'Fail', {
+      this.toastr.error(err.error.message, 'Fail', {
         timeOut: 3000, positionClass:'toast-top-right'
       });
     });

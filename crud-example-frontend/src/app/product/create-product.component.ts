@@ -30,7 +30,7 @@ export class CreateProductComponent implements OnInit {
       });
       this.router.navigate(['/']);
     }, err => {
-      this.toastr.error(err.message, 'Fail', {
+      this.toastr.error(err.error.message, 'Fail', {
         timeOut: 3000, positionClass:'toast-top-left'
       });
       this.router.navigate(['/']);
